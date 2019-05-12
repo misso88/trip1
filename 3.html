@@ -3,46 +3,75 @@
 <head>
   <title>LeeSungDang</title>
   <meta charest="utf-8">
+  <style>
+      a{
+        color:black;
+        text-decoration:none;
+      }
+      h1{
+        font-size:40px;
+        text-align: center;
+        border:5px double gray;
+        margin:0;
+        padding:15px;
+      }
+      #grid ol{
+        border-right:2px dashed gray;
+        width:150px;
+        padding-top: 20px;
+      }
+      #article{
+        padding :25px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 1fr 4fr;
+      }
+      #price{
+        border:1px dotted gray;
+        padding:10px;
+        width:500px;
+      }
+  </style>
 </head>
 
 <body>
   <h1><a href="index.html">Gunsan trip</a></h1>
-  <ul>
-    <li><a href="1.html">Railroad Vilage</a></li>
-    <li><a href="2.html">Enpa Lake Park</a></li>
-    <li><a href="3.html">LeeSungDang</a></li>
-  </ul>
-  <h2>LeeSungDang</h2>
-  <p style="margin-top:40px;">
-  <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/Nq5kyXhAOEE"
-  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <br>Red bean bread-----------1,500won
-  <br>Vegetable bread-----------1,800won
-  <br>Whipping cream&Beans-------2,000won
-  <br>croquette-----------1,800won
-  <br>Blue bread-----------2,300won
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">Railroad Village</a></li>
+      <li><a href="2.html">Enpa Lake Park</a></li>
+      <li><a href="3.html" style="color:red; text-decoration:underline">LeeSungDang</a></li>
+    </ol>
+
+    <div id="article">
+      <h2>LeeSungDang</h2>
+      <p style="margin-top:40px;">
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/Nq5kyXhAOEE"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="price">
+        <h3 style="text-align: center; margin:10px;">Price</h3>
+        <ul>
+          <li>Red bean bread-----------1,500won</li>
+          <li>Vegetable bread-----------1,800won</li>
+          <li>Whipping cream&Beans-------2,000won</li>
+          <li>croquette-----------1,800won</li>
+          <li>Blue bread-----------2,300won</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div id="disqus_thread"></div>
   <script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://web1-mh8nlbau2o.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-mh8nlbau2o.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>

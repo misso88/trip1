@@ -3,40 +3,73 @@
 <head>
   <title>Railroad Village</title>
   <meta charest="utf-8">
+  <style>
+      a{
+        color:black;
+        text-decoration:none;
+      }
+      h1{
+        font-size:40px;
+        text-align: center;
+        border:5px double gray;
+        margin:0;
+        padding:15px;
+      }
+      #grid ol{
+        border-right:2px dashed gray;
+        width:150px;
+        padding-top: 20px;
+      }
+      #article{
+        padding :25px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 1fr 4fr;
+      }
+  </style>
 </head>
 
 <body>
   <h1><a href="index.html">Gunsan trip</a></h1>
-  <ul>
-    <li><a href="1.html">Railroad Village</a></li>
-    <li><a href="2.html">Enpa Lake Park</a></li>
-    <li><a href="3.html">LeeSungDang</a></li>
-  </ul>
-  <h2>Gyeongam-dong Railroad Village</h2>
-  <p style="margin-top:40px;">
-  The way to go
-  <br><a href="https://map.naver.com/local/siteview.nhn?code=31825959" target="_blank"><Img src="map1.jpg" width=300></a>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" style="color:red; text-decoration:underline">Railroad Village</a></li>
+      <li><a href="2.html">Enpa Lake Park</a></li>
+      <li><a href="3.html">LeeSungDang</a></li>
+    </ol>
 
-    <div id="disqus_thread"></div>
-    <script>
+    <div id="article">
+      <h2>Gyeongam-dong Railroad Village</h2>
+      <p style="margin-top:40px;">
+      The railroad, which is 2.5 km long,
+      It was made in April 1944 by Paper Korea to carry products and raw materials.
+      A cargo train with 5 to 10 cargo containers
+      He passed the village between 8:30 am and 9:30 am and between 10:30 am and 12:00 am
+      <br>There were eleven crossings in the village with and without breakers in the village.
+      People live slowly because they have to pass through the neighborhood.
+      When the train passed by, three station personnel blew the whistle in front of the train and shouted to stop people from passing,
+      In the meantime, the residents brought in the peppers and others, which they put outside, and invited puppies.
+      <br>A slow train of 10 km / h stopped completely on July 1, 2008
+      Though the train is gone, there is still a quiet village life, such as doors and walls, clothesline, and gardens that have no boundaries of ownership.
+      Currently, the village of the railroad, anime "dream of a precious day" stage,
+      The movie "When a Man Wants to Love" is famous for its location and photo lovers.
 
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
+      <p style="margin-top:40px;">
+      <h4>The way to go</h4>
+      <br><a href="https://map.naver.com/local/siteview.nhn?code=31825959" target="_blank"><Img src="map1.jpg" width=300></a>
+    </div>
+  </div>
+
+  <div id="disqus_thread"></div>
+  <script>
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
     s.src = 'https://web1-mh8nlbau2o.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>
